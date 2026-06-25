@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.35);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.password-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.password-box input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fff;
+    color: #000;
+}
+
+.password-box button {
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #22c55e;
+    color: white;
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option:first-child {
+    display: block;
+}
+
+.option label {
+    font-size: 0.95rem;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.generate-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #3b82f6;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.generate-btn:hover {
+    background: #2563eb;
+}
+
+.strength-container {
+    margin-top: 25px;
+}
+
+.strength-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,.15);
+    border-radius: 999px;
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+#strengthIndicator {
+    height: 100%;
+    width: 0%;
+    transition: .3s;
+}
+
+#strengthText {
+    font-weight: bold;
+}
